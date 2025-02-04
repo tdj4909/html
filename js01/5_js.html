@@ -59,12 +59,12 @@
             console.log(star);
         }
         // 별찍기 3
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 4; i >= 0; i--) {
             var star = "";
 
             for (let j = 1; j <= 5; j++) {
 
-                if (j <= 5 - i) {
+                if (j <= i) {
                     star += " ";
                 } else {
                     star += "*";
