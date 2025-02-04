@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 90점 이상 a
+        // 100 ~ 97 : a+
+        // 96 ~ 94 : a0
+        // 93 ~ 90 : a-
+
+        var score = 93;
+        if (score >= 90) {
+            if (score >= 97) {
+                alert("a+");
+            } else if (score >= 94) {
+                alert("a0");
+            } else {
+                alert("a-");
+            }
+        } else if (score >= 80) {
+            if (score >= 87) {
+                alert("b+");
+            } else if (score >= 84) {
+                alert("b0");
+            } else {
+                alert("b-");
+            }
+        } else if (score >= 70) {
+            if (score >= 77) {
+                alert("c+");
+            } else if (score >= 74) {
+                alert("c0");
+            } else {
+                alert("c-");
+            }
+        } else if (score >= 60) {
+            if (score >= 67) {
+                alert("d+");
+            } else if (score >= 64) {
+                alert("d0");
+            } else {
+                alert("d-");
+            }
+        } else {
+            alert("f");
+        }
+
+
+        var x = 3;
+        var y = 3;
+
+        if (x == 0 && y == 0) {
+            console.log("원점에 있습니다.");
+        } else if (x == 0 || y == 0) {
+            if (x == 0) {
+                console.log("y선에 있습니다.");
+            } else {
+                console.log("x선에 있습니다.");
+            }
+        } else {
+            if (x > 0) {
+                if (y > 0) {
+                    console.log("1사분면에 있습니다.");
+                } else {
+                    console.log("4사분면에 있습니다.");
+                }
+            } else {
+                if (y > 0) {
+                    console.log("2사분면에 있습니다.");
+                } else {
+                    console.log("3사분면에 있습니다.");
+                }
+            }
+        }
+
+        var singer = "Tony";
+
+        switch (singer) {
+            case "장원영":
+                alert("예쁘십니다.");
+                break;
+            case "전지현":
+                alert("잠만잡니다.");
+                break;
+            default:
+                alert("default.");
+                break;
+        }
+
+        if (singer == "장원영") {
+            alert("예쁘십니다.");
+        } else if (singer == "전지현") {
+            alert("예쁘십니다.");
+        } else {
+            alert("default.");
+        }
+
+        var weekday = "수";
+
+        switch (weekday) {
+            case "월":
+                alert("월요일입니다.");
+                break;
+            case "화":
+                alert("화요일입니다.");
+                break;
+            case "수":
+                alert("수요일입니다.");
+                break;
+            case "목":
+                alert("목요일입니다.");
+                break;
+            case "금":
+                alert("금요일입니다.");
+                break;
+            case "토":
+                alert("토요일입니다.");
+                break;
+            case "일":
+                alert("일요일입니다.");
+                break;
+            default:
+                alert("아무것도 없습니다.");
+                break;
+        }
+
+        var number = 2;
+
+        switch (number) {
+            case 2:
+                alert("2입니다.")
+                break;
+
+            default:
+                alert("2가 아닙니다.")
+                break;
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            console.log(i);
+        }
+
+        // 1부터 10까지 합
+        var sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+        }
+        console.log(sum);
+
+        // 구구단
+        for (let i = 2; i <= 9; i++) {
+            for (let j = 1; j <= 9; j++) {
+                if (i * j % 2 != 0) {
+                    console.log(i + " * " + j + " = " + i * j);
+                }
+            }
+            console.log("====================");
+        }
+
+        // 별찍기
+        for (let i = 1; i <= 5; i++) {
+            var star = "";
+
+            for (let j = 0; j < i; j++) {
+                star += "*";
+            }
+
+            star += i;
+            console.log(star);
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            var star = "";
+
+            for (let j = 1; j <= 4 + i; j++) {
+
+                if (j <= 5 - i) {
+                    star += " ";
+                } else {
+                    star += "*";
+                }
+
+            }
+
+            console.log(star);
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            var star = "";
+
+            for (let j = 1; j <= 5; j++) {
+
+                if (j <= 5 - i) {
+                    star += " ";
+                } else {
+                    star += "*";
+                }
+
+            }
+
+            console.log(star);
+        }
+
+    </script>
+</body>
+</html>
