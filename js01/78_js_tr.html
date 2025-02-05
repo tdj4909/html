@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-
     <script>
-
         function kkkk(x, y) {
             var result;
 
@@ -43,7 +39,28 @@
 
         var c = kkkk(1,3);
         alert(c + "에 위치합니다.");
+
+        function name(params) {
+            var result;
+
+            switch (params) {
+                case "장원영":
+                    result = "이쁘다";
+                    break;
+                case "전지현":
+                    result = "잠잔다";
+                    break;
+                default:
+                    result = "default";
+                    break;
+            }
+
+            return result;
+        }
+
+        var func = name("장원영");
+        alert(func);
+        
     </script>
 </body>
-
 </html>
