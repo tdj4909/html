@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function kkkk(x, y) {
+            if (x > 0) {
+                if (y > 0) {
+                    return 1;
+                } else if (y < 0) {
+                    return 4;
+                }
+            } else if (x < 0) {
+                if (y > 0) {
+                    return 2;
+                } else if (y < 0) {
+                    return 3;
+                }
+            }
+        }
+
+        var c = kkkk(1, 2);
+        alert(c + "사분면에 위치합니다.");
+    </script>
+</body>
+
+</html>
